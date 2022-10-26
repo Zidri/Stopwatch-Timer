@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/046dd30d2f.js" crossorigin="anonymous"></script>
+    <title id="title">Timer</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="header" id="header">
+        <h1>Timer</h1>
+    </div>
+    <div class="container">
+
+        <div class="circle">
+            <div class="time" id="timeDisplay">
+                00:00:00
+            </div>
+            <div class="timeInput" id="timeInput">
+                <input id="goalH" type="number" min="0" value="00">:
+                <input id="goalM" type="number" max="60" min="0" value="00">:
+                <input id="goalS" type="number" max="60" min="0" value="00">
+            </div>
+        </div>
+
+        
+
+        <div class="buttonDisplay">
+            <button class="btn" id="toggle" onclick="toggleStopwatch()">Stopwatch</button>
+            <button class="btn" id="startBtn" onclick="startTimer()">Start</button>
+            <button class="btn" id="resetTime" onclick="clearTime(true)">Reset</button>
+        </div>
+
+    </div>
+</body>
+
+</html>

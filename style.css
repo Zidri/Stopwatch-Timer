@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/*Colors: https://coolors.co/f1f7ee-b0bea9-92aa83-e0edc5-4c061d*/
+
+body {
+    background-color: #F1F7EE;
+    padding: 10px;
+}
+
+h1 {
+    color: #4C061D;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 150%;
+    margin: 0;
+}
+
+h2 {
+    color: #4C061D;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: #92AA83;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+}
+
+/*Clock*/
+/*Background*/
+.circle {
+    /* max-width: 80%; */
+    height: 30rem;
+    width: 30rem;
+    background-color: #E0EDC5;
+    border-radius: 50%;
+    margin: 25px;
+
+    /*center contents*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Time*/
+.time {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    color: #4C061D;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+
+    display: none;
+}
+
+/*time input*/
+.timeInput {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    color: #4C061D;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
+
+.timeInput input {
+    width: 8rem;
+    height: 5rem;
+
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 600;
+    color: #4C061D;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+
+    /*hide box styling*/
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #E0EDC5;
+}
+
+/*buttons*/
+.buttonDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #E0EDC5;
+    font-size: 1rem;
+    width: 110px;
+    min-height: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: black solid 1px;
+    margin: 2px 2px;
+    color: #4C061D;
+}
+
+.btn:hover {
+    background-color: #B0BEA9;
+}
